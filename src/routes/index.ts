@@ -6,8 +6,8 @@ import { orderControllerInstance } from "../controllers/order.controller";
 export const router = express.Router();
 
 /**
- * used by admin - View existing grocery items
- * used by User - View the list of available grocery items - send inventoryLevel=all/available in query param
+ * Admin - View existing grocery items
+ * User - View the list of available grocery items - send inventoryLevel=1 in query param
  */
 router.get("/groceries", groceryControllerInstance.getAllGroceries);
 
@@ -23,6 +23,7 @@ router.delete("/groceries/:id", groceryControllerInstance.deleteGrocery);
 
 /**
  * Admin - Update details (e.g., name, price) of existing grocery items
+ * Admin - Manage inventory levels of grocery items
  */
 router.put("/groceries/:id", groceryControllerInstance.updateGrocery);
 

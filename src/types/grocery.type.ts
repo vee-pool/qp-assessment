@@ -6,6 +6,6 @@ export type GroceryType = {
 }
 
 export enum GroceryInventoryLevel {
-	Available = 1,
-	Sold_Out
+	Available = 1, // inventoryLevel > 0
+	Sold_Out // inventoryLevel 0
 }
