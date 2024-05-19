@@ -1,0 +1,105 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "qp-assessment",
+    "collectionId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+    "dateExported": "2024-05-19T03:18:17.068Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d92fa96b-3d83-4657-9a9d-c72ef387e5e3",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "View existing grocery items",
+            "url": "http://localhost:7000/api/v1/groceries",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-18T09:39:20.698Z",
+            "modified": "2024-05-18T09:39:20.698Z",
+            "headers": []
+        },
+        {
+            "_id": "59cc1174-3d0a-4904-bd5e-63ac36b8fde6",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "View available grocery items ",
+            "url": "http://localhost:7000/api/v1/groceries?inventoryLevel=1",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-05-18T14:11:53.993Z",
+            "modified": "2024-05-18T14:13:05.998Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "inventoryLevel",
+                    "value": "1",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "077fd679-faf7-4459-9b62-1eb5c52bcf0f",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "Add new grocery items to the system",
+            "url": "http://localhost:7000/api/v1/grocery",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-18T09:39:45.600Z",
+            "modified": "2024-05-19T03:10:02.389Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"milk\",\n  \"price\": \"20\",\n  \"inventoryLevel\": 3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bcd5f499-148e-437d-892b-6cbd99920729",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "Ability to book multiple grocery items in a single order",
+            "url": "http://localhost:7000/api/v1/users/11/order",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-18T19:00:04.841Z",
+            "modified": "2024-05-18T19:28:32.180Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"grocery_ids\": [\"01b27cca-f9b1-4310-857e-1e86f51f1281\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c7afbf62-e354-4c32-b552-c6502f88843e",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "Update details (e.g., name, price) of existing grocery items",
+            "url": "http://localhost:7000/api/v1/groceries/9bfff827-928b-4d66-85b3-3e6ae594603d",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-05-19T02:57:20.892Z",
+            "modified": "2024-05-19T03:09:05.342Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"facewash\",\n  \"price\": \"25\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "47fe3ac6-a2d3-4504-b2a7-411fb1445c81",
+            "colId": "0cd29b4a-015a-445f-bae9-0443e17fba32",
+            "containerId": "",
+            "name": "Remove grocery items from the system",
+            "url": "http://localhost:7000/api/v1/groceries/1098d549-9732-48e3-96a8-335d9a6ceccf",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-05-19T03:10:12.917Z",
+            "modified": "2024-05-19T03:11:37.232Z",
+            "headers": []
+        }
+    ],
+    "ref": "9YqDw74KUqGaantwl47B9zsKgc6aQtQ2o4IevjoXnMVNb5QmRlmmNdaJTJcDz86IDFwKLTb-vFjenZD9S8BHRw"
+}
