@@ -1,5 +1,3 @@
 # qp-assessment
-## Express.js
-## Typescript
-## Sequelize
-## MySQL
+## MySQL, Sequelize, Typescript, Express.js
+
