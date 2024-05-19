@@ -26,7 +26,7 @@ app.use('/api/v1', router);
 const start = async (): Promise<void> => {
     try {
       await connection.sync({
-        force: true // for development
+        alter: true // for development
       });
       app.listen(PORT, () => {
         console.log(`Server started on port ${PORT}`);
