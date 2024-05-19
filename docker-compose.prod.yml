@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  qp-assessment:
+    build:
+      target: production
+    command: node dist/app.js

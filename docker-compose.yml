@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  qp-assessment:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./:/home/vipz/trials/questionPro-assignment/
+    container_name: qp-assessment
+    expose:
+      - '7000'
+    ports:
+      - '7000:7000'
+    command: npm start

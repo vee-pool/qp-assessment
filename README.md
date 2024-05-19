@@ -1,3 +1,7 @@
 # qp-assessment
-## MySQL, Sequelize, Typescript, Express.js
+## Grocery Booking API
+### Typescript
+### Docker
+### MySQL, Sequelize
+### Express.js
 

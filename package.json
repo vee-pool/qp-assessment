@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node app.ts",
     "build": "tsc",
-    "serve": "node dist/index.js"
+    "serve": "node dist/app.js"
   },
   "author": "questionPro",
   "license": "ISC",
